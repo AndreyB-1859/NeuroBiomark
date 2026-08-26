@@ -1,0 +1,8 @@
+=== ANOVA Results Across Classes ===
+Sensitivity: F = 0.9629, p = 0.3552
+Specificity: F = 0.9629, p = 0.3552
+
+=== Class-wise Means & 95% Confidence Intervals ===
+            Class  Sens_Mean  Sens_CI_Low  Sens_CI_High  Spec_Mean  Spec_CI_Low  Spec_CI_High
+0  ALS-Concordant       0.63     0.170417      1.089583       0.42     0.043385      0.796615
+1  ALS-Discordant       0.42     0.043385      0.796615       0.63     0.170417      1.089583
