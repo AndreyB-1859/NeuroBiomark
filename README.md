@@ -8,7 +8,11 @@ Univeristy project focused on using DenseNet121 model with attention mechanism t
 -   3 Classes: Original trainable model, contains Concordant, Discordant and Control classes
 -   2 Classes: Modified trainable model, contain Concordant and Discordant classes, as well as different augmentation techniques.
 
+# Requirements
+The GUI model has requirements established by the people who created it. The trainable models however, do not. As such, I developed a workaround of applying the requirements from the GUI model to the trainable ones. There are some problems with this approach. Firstly, you still have to install 'seaborn' and 'albumentations' packages. Secondly, each time the model reads an image file of the cells it gives a warning since it misses some c++ library for metadata recognition. And finally, you have to reinstall torch for cuda, as it'll be installed fro cpu.
+
+
 # TODO
-- Trainable models contain code for EfficientNet and BasicCNN, it clutters the project and makes it hard to understand what functions to what. Better remove them.
-- Big chunk of the project is written sequentially by AI, it would be a good idea to tidy up the code into more manageable files, as well as remove unnecessary duplicated functions.
+- [ ] Trainable models contain code for EfficientNet and BasicCNN, it clutters the project and makes it hard to understand what functions to what. Better remove them.
+- [ ] Big chunk of the project is written sequentially by AI, it would be a good idea to tidy up the code into more manageable files, as well as remove unnecessary duplicated functions.
   
