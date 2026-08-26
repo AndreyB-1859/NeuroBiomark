@@ -15,4 +15,7 @@ The GUI model has requirements established by the people who created it. The tra
 # TODO
 - [ ] Trainable models contain code for EfficientNet and BasicCNN, it clutters the project and makes it hard to understand what functions to what. Better remove them.
 - [ ] Big chunk of the project is written sequentially by AI, it would be a good idea to tidy up the code into more manageable files, as well as remove unnecessary duplicated functions.
+- [ ] Add MCC evaluation for augmentation techniques
+- [ ] Run the model with 2 classes with all the good augmentations
+- [ ] Plot Confidence level of prediction in function of ECAS/ALSFRS-R value.
   
