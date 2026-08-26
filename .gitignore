@@ -1,0 +1,17 @@
+*~
+
+# Images
+*.tif
+
+# Python's virtual environments
+/**/venv/
+
+# Python cache folders
+/**/__pycache__/
+
+# Vscode workspaces
+
+/**/.vscode/
+
+# Logs
+/**/logs/
