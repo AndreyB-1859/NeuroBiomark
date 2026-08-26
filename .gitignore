@@ -14,4 +14,8 @@
 /**/.vscode/
 
 # Logs
-/**/logs/
+image_keys.*
+
+# Ignore testing files and folders
+testing.py
+/**/test/
