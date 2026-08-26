@@ -1,0 +1,5 @@
+Class,Sensitivity,Specificity,Accuracy,MCC
+0,0.7,0.55,,
+1,0.55,0.7,,
+2,0.0,1.0,,
+Overall,,,0.6,0.236227795630767
