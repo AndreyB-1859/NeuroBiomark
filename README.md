@@ -22,10 +22,11 @@ The requirements for the GUI model are:
 > 4. cd into the root directory of the project first "NeuroBiomark_Project_interface"
 > 5. Run the application file - python -m Home_Window.gui_home ```
 
-## Miscellaneous files (this applies only for the trainable models)
+## Miscellaneous files 
 Every 'dataset' folder will be missing 'image_kayes.xlsx' as it contains sensitive information not to be published online. Nonetheless, having this file is necessary for trainable models to create folds. As such, you will need to manually add it to the directory.
 
-Additionally, the paths written in the 'config.py' folders, which are referenced everywhere in the code, are absolute. Therefore, you'll need to update them after cloning the project fro the model's to run.
+> (this applies only for the trainable models)
+> Additionally, the paths written in the 'config.py' folders, which are referenced everywhere in the code, are absolute. Therefore, you'll need to update them after cloning the project fro the model's to run.
 
 
 # TODO
