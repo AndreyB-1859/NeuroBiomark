@@ -2,9 +2,9 @@ import torch
 
 class Config():
 
-    dataset_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark_Project/Models/Model_with_training_no_control_class/Neuro_Biomark_ALS_Project-main/dataset"
-    logs_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark_Project/Models/Model_with_training_no_control_class/Neuro_Biomark_ALS_Project-main/logs"
-    saved_models_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark_Project/Models/Model_with_training_no_control_class/Neuro_Biomark_ALS_Project-main/saved_models"
+    dataset_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark/Models/2_Classes/Neuro_Biomark_ALS_Project-main/dataset"
+    logs_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark/Models/2_Classes/Neuro_Biomark_ALS_Project-main/logs"
+    saved_models_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark/Models/2_Classes/Neuro_Biomark_ALS_Project-main/saved_models"
 
     no_of_folds = 5
     fold_no = -1
