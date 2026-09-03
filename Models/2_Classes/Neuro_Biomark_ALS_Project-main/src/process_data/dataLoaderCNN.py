@@ -80,12 +80,9 @@ def compute_dataset_statistics(image_paths, sample_size=None):
     return mean, std
 
 
-# Global variables to cache normalization statistics
-_DATASET_MEAN = None
-_DATASET_STD = None
 
 
-def get_normalization_stats(train_paths, recompute=False):
+def get_normalization_stats(train_paths):
     """
     Get or compute dataset normalization statistics
     
@@ -96,13 +93,7 @@ def get_normalization_stats(train_paths, recompute=False):
     Returns:
         mean, std as numpy arrays
     """
-    global _DATASET_MEAN, _DATASET_STD
-    
-    if _DATASET_MEAN is None or _DATASET_STD is None or recompute:
-        # Compute from all training images
-        _DATASET_MEAN, _DATASET_STD = compute_dataset_statistics(train_paths)
-    
-    return _DATASET_MEAN, _DATASET_STD
+    return compute_dataset_statistics(train_paths)
 
 
 # ============================================================================
