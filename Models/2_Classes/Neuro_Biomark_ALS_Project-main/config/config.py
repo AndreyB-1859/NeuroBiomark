@@ -1,11 +1,12 @@
 import torch
+import os
 
 class Config():
-
-    dataset_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark/Models/2_Classes/Neuro_Biomark_ALS_Project-main/dataset"
-    logs_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark/Models/2_Classes/Neuro_Biomark_ALS_Project-main/logs"
-    saved_models_dir_path = r"C:/Users/ab4197/Documents/NeuroBiomark/Models/2_Classes/Neuro_Biomark_ALS_Project-main/saved_models"
-
+    dirname = os.path.dirname(__file__) #On config level
+    project_dir = os.path.join(dirname, '..') #On project main level
+    dataset_dir_path = project_dir + r"/dataset"
+    logs_dir_path = project_dir + r"/logs"
+    saved_models_dir_path = project_dir + r"/saved_models"
     no_of_folds = 5
     fold_no = -1
 
@@ -15,7 +16,7 @@ class Config():
     weight_decay = 0.01
     early_stop = 10
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu')
     print(f"\nUsing {device} device")
 
 config = Config()
